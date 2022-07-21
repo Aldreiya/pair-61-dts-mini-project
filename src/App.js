@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import { Box, ThemeProvider } from '@mui/material';
+
+import theme from './themes/theme';
+import Register from './containers/Register';
+import Login from './containers/Login';
+import Navbar from './components/Navbar';
+import { Outlet } from 'react-router-dom';
+import MovieList from './containers/MovieList';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <Navbar/>
+      <Outlet/>
+    </Box>
   );
 }
 
