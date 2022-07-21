@@ -61,7 +61,7 @@ const MovieDetails = () => {
                     <Typography gutterBottom variant="h5" component="div">
                         Overview
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2">
                         {movies.overview}
                     </Typography>
                     

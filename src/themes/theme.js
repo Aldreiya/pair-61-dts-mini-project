@@ -14,12 +14,8 @@ const theme = createTheme({
     },
     text: {
       primary: '#fff',
-      secondary: '#141414',
     },
-    
-  input: {
-    color: "#2EFF22"
-  }
+
   },
 });
 

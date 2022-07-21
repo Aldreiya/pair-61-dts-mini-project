@@ -40,13 +40,14 @@ const Login = () => {
     };
 
     return (
-        <Container component="main" maxWidth="xs">
+        <Container component="main" maxWidth="xs" sx={{ bgcolor:'#3f3f3f', borderRadius:'5px'}}>
             <Box
                 sx={{
                     mt: 10,
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
+                    color: 'white'
                 }}
             >
                 <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -64,7 +65,6 @@ const Login = () => {
                         label="Email Address"
                         name="email"
                         autoComplete="email"
-                        sx={{color:'text.secondary'}}
                         autoFocus
                     />
                     <TextField

@@ -1,4 +1,4 @@
-import { Box, Button, CardMedia, Chip, Rating, TableCell } from '@mui/material';
+import { Box, Button, CardMedia, Rating } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
@@ -21,12 +21,12 @@ const MovieCard = ({ movie }) => {
         image={`${BASE_IMAGE_URL}${movie.poster_path}`}
         alt="Movie poster"
       />
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column'}}>
         <CardContent sx={{ flex: '1 0 auto' }}>
           <Typography component="div" variant="h6">
             {movie.title}
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
+          <Typography variant="subtitle1" component="div">
             {new Date(movie.release_date).getFullYear()}
           </Typography>
           <Box
