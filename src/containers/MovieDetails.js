@@ -1,8 +1,8 @@
 import { Box, Button, Card, CardContent, CardMedia,  Rating, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
-import tmdb from '../apis/tmdb';
 import { useParams } from 'react-router-dom';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import tmdb from '../apis/tmdb';
 const BASE_IMAGE_URL = "https://image.tmdb.org/t/p/original";
 
 

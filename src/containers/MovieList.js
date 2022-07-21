@@ -1,8 +1,8 @@
 import { Box,  Divider, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
+import MovieCard from '../components/MovieCard';
 
 import tmdb from '../apis/tmdb';
-import MovieCard from '../components/MovieCard';
 
 const MovieList = () => {
     const [movies, setMovies] = useState([]);
@@ -21,7 +21,7 @@ const MovieList = () => {
 
         fetchMovies();
     }, []);
-
+    console.log(movies);
     return (
         <Box sx={{
             display: 'flex',
