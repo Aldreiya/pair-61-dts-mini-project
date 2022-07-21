@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB4R-tsbMRQ8g_KpeVPQRGhSCkjA9suyG0",
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
   authDomain: "pair-61-dts-mini-project.firebaseapp.com",
   projectId: "pair-61-dts-mini-project",
   storageBucket: "pair-61-dts-mini-project.appspot.com",
