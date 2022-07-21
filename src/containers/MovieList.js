@@ -1,12 +1,10 @@
-import { Box, Button, Divider, Typography } from '@mui/material';
+import { Box,  Divider, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
 
 import tmdb from '../apis/tmdb';
 import MovieCard from '../components/MovieCard';
 
 const MovieList = () => {
-    const [queryParams, setQueryParams] = useSearchParams();
     const [movies, setMovies] = useState([]);
     const [moviesReady, setMoviesReady] = useState(false);
 

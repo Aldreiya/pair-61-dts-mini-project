@@ -1,7 +1,5 @@
-import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Divider, Rating, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, CardMedia,  Rating, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 import tmdb from '../apis/tmdb';
 import { useParams } from 'react-router-dom';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -9,7 +7,6 @@ const BASE_IMAGE_URL = "https://image.tmdb.org/t/p/original";
 
 
 const MovieDetails = () => {
-    const [queryParams, setQueryParams] = useSearchParams();
     const [movies, setMovies] = useState([]);
     const [moviesReady, setMoviesReady] = useState(false);
     let params = useParams();
