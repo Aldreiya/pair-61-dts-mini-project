@@ -21,7 +21,7 @@ const MovieList = () => {
 
         fetchMovies();
     }, []);
-    console.log(tmdb);
+    console.log(movies);
     return (
         <Box sx={{
             display: 'flex',
